@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "XMLTabBarController.h"
+//#import "XMLHRViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,11 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    UITabBarController * tabBarVc = [[UITabBarController alloc]init];
-    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:tabBarVc];
-    self.window.rootViewController = nav;
+    XMLTabBarController * tabBarVC = [[XMLTabBarController alloc]init];
+    self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     return YES;
 }

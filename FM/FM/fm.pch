@@ -1,0 +1,30 @@
+//
+//  fm.pch
+//  FM
+//
+//  Created by home on 2017/8/18.
+//  Copyright © 2017年 qingpengwang. All rights reserved.
+//
+
+#ifndef fm_pch
+#define fm_pch
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "YYModel.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "BaseNetManager.h"
+#import "tool.h"
+#import "Additions.h"
+
+#endif
+
+#endif /* fm_pch */
+
